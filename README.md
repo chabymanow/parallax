@@ -1,2 +1,6 @@
-# parallax
-Parallax effect on the website header
+# Parallax effect
+---
+Hero section with parallax effect plus some animation on the other paragraphs
+
+---
+
