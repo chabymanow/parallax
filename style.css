@@ -17,7 +17,7 @@ body{
     height: 100vh;
 }
 
-section{
+.hero{
     height: 150%;
 }
 
@@ -151,4 +151,26 @@ span{
     line-height: 200%;
     color: rgb(28, 29, 29);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@keyframes fromRightAnim{
+    from{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fromleftAnim{
+    from{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
