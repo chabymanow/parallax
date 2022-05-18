@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+:root{
+    --font-header: clamp(1em, 10vw + .1rem, 7rem); 
+    --font-subtext: clamp(1em, 2vw + .1rem, 2rem); 
+
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    background: #f0f0f0;
+    height: 100vh;
+}
+
+section{
+    height: 150%;
+}
+
+ul{
+    height: 100vh;
+    list-style: none;
+}
+
+li{
+    margin-right: .3em;
+}
+
+span{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #000000;
+    border-radius: 50%;
+}
+
+.container{
+    width: 100%;
+    height: 150vh;
+    background: url(images/cloudy_mountains01.jpg);
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    position: relative;
+}
+
+.header{
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    align-items: center;
+    place-items: center;
+    position: relative;
+}
+
+.text{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-header);
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: rgb(27, 27, 27);
+    position: relative;
+    margin-top: -30vh;
+    z-index: 2;
+}
+
+.subtext{
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--font-subtext);
+    font-weight: 800;
+    letter-spacing: .1em;
+    color: rgb(27, 27, 27);
+    position: relative;
+    z-index: 2;
+}
+
+.cloud01,  .cloud02,  .cloud03{
+    position: absolute;
+}
+
+.cloud01{
+    width: 100vw;
+    height: auto;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.cloud02{
+    width: 80vw;
+    height: auto;
+    right: 0;
+    bottom: 30vh;
+    z-index: 3;
+    opacity: .9;
+}
+
+.cloud03{
+    width: 70vw;
+    height: auto;
+    left: 0;
+    bottom: 10vh;
+    z-index: 4;
+    opacity: .8;
+}
+
+.line{
+    width: 2px;
+    height: 30vh;
+    background: rgb(27, 27, 27);
+    position: relative;
+    grid-row: 3;
+    grid-column: 1;
+    margin-top: 2em;
+    z-index: 3;
+}
+
+.line::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: -9px;
+    bottom: -2px;
+    border-style: solid;
+    border-width: 15px 10px 0 10px;
+    border-color: rgb(27, 27, 27) transparent transparent transparent;
+}
+
+.contentLine{
+    width: 100vw;
+    background: #ffffff;
+}
+
+.paragraph{
+    width: 60vw;
+    padding: 1em 2em;
+    margin: 0 auto;
+    margin-top: 3em;
+    background: #ffffff;
+    font-size: 1.1em;
+    line-height: 200%;
+    color: rgb(28, 29, 29);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
