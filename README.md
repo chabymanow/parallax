@@ -16,6 +16,7 @@ There is some **HTML** `data` option to controll the effect:
 * **data-rateX**: controll the movement speed horizontally
 * **data-rateY**: controll the movement speed verticaly
 * **data-dir**: this give the direction for the movement
+* **data-opacity**: if is yes, the code will change the opacity of this element
 
 CSS variables:
 there is no **SCSS** just a plain **CSS** but I use some variable
