@@ -1,6 +1,4 @@
-Parallax effect
-
-
+#Parallax effect
 ---
 Hero section with parallax effect plus some animation on the other paragraphs
 There is no need any plugin or other code from third party. Just pure HTML + CSS + JavaScript.
